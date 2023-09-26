@@ -11,36 +11,33 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.cartodepresente.ui.theme.CartãoDePresenteTheme
+import java.lang.reflect.GenericDeclaration
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             CartãoDePresenteTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting("Android")
-                }
+
+
             }
         }
     }
-}
+@Preview
+@@Composable
+fun TelaCartaoPresente(){
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Hello $name!",
-        modifier = modifier
+        text ="Feliz anivesário "
     )
+    Text(
+        text ="para: Ana Clara "
+    )
+
+
+
+
 }
 
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CartãoDePresenteTheme {
-        Greeting("Android")
-    }
-}
+
+
